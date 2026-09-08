@@ -1,0 +1,132 @@
+@media (max-width: 1300px) {
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .agent-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 1050px) {
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credit-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    width: 80px;
+  }
+
+  .brand-text,
+  .collapse-button,
+  .menu-label,
+  .menu-text,
+  .sidebar-profile {
+    display: none;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main-layout {
+    margin-left: 80px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-search {
+    width: 200px;
+  }
+
+  .navbar-user div:last-child {
+    display: none;
+  }
+
+  .page-content {
+    padding: 20px;
+  }
+
+  .income-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .agent-workflow {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .stats-grid,
+  .stats-grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .page-header h1 {
+    font-size: 23px;
+  }
+
+  .agent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approval-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast-alert {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .forecast-alert button {
+    margin-left: 0;
+  }
+
+  .borrower-profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recommendation-box {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,164 @@
+.navbar {
+  height: 85px;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+
+  background: rgba(255, 250, 240, 0.9);
+
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid #edd5a5;
+
+  z-index: 500;
+}
+
+.navbar-search {
+  width: 360px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 11px 15px;
+
+  background: white;
+
+  border: 1px solid #edd5a5;
+
+  border-radius: 12px;
+
+  color: #b08968;
+}
+
+.navbar-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 13px;
+
+  color: #5c3d2e;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-button {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #edd5a5;
+
+  background: white;
+
+  border-radius: 12px;
+
+  color: #7b5e57;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+.icon-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(217, 119, 6, 0.12);
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+
+  top: -5px;
+  right: -5px;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d97706;
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-left: 8px;
+}
+
+.navbar-avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    135deg,
+    #f4a261,
+    #e9c46a
+  );
+}
+
+.navbar-user strong,
+.navbar-user span {
+  display: block;
+}
+
+.navbar-user strong {
+  font-size: 12px;
+  color: #5c3d2e;
+}
+
+.navbar-user span {
+  margin-top: 3px;
+  font-size: 10px;
+  color: #a1887f;
+}
+
+.rotating {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,457 @@
+/* =========================
+   STAT CARD
+========================= */
+
+.stat-card {
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-md);
+
+  border-color: var(--primary-yellow);
+}
+
+.stat-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 5px;
+
+  height: 100%;
+
+  background: linear-gradient(
+    to bottom,
+    var(--primary-yellow),
+    var(--primary-orange)
+  );
+}
+
+.stat-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 13px;
+
+  color: var(--text-secondary);
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: var(--soft-yellow);
+
+  color: var(--dark-orange);
+
+  font-size: 18px;
+}
+
+.stat-value {
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  font-size: 27px;
+
+  font-weight: 700;
+
+  margin-top: 18px;
+}
+
+.stat-change {
+  margin-top: 8px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.positive {
+  color: var(--success);
+}
+
+.negative {
+  color: var(--danger);
+}
+
+/* =========================
+   ALERT CARD
+========================= */
+
+.alert-card {
+  display: flex;
+
+  gap: 14px;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border-color);
+
+  background: var(--card-bg);
+
+  margin-bottom: 12px;
+
+  transition: 0.2s;
+}
+
+.alert-card:hover {
+  transform: translateX(4px);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: var(--warning-bg);
+
+  color: var(--warning);
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.alert-description {
+  font-size: 12px;
+
+  color: var(--text-secondary);
+
+  margin-top: 5px;
+}
+
+.alert-time {
+  font-size: 11px;
+
+  color: var(--text-muted);
+
+  margin-top: 7px;
+}
+
+/* =========================
+   AGENT CARD
+========================= */
+
+.agent-card {
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  transition: all 0.25s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--primary-orange);
+
+  box-shadow: var(--shadow-md);
+}
+
+.agent-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.agent-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    var(--soft-yellow),
+    var(--soft-orange)
+  );
+
+  color: var(--dark-orange);
+
+  font-size: 20px;
+}
+
+.agent-name {
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.agent-status {
+  font-size: 11px;
+
+  margin-top: 4px;
+
+  color: var(--success);
+}
+
+.agent-description {
+  font-size: 13px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.6;
+}
+
+/* =========================
+   APPROVAL CARD
+========================= */
+
+.approval-card {
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.approval-title {
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.approval-description {
+  font-size: 12px;
+
+  color: var(--text-secondary);
+
+  margin-top: 5px;
+}
+
+.approval-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary-yellow),
+    var(--primary-orange)
+  );
+
+  color: white;
+
+  box-shadow: 0 6px 16px rgba(217, 119, 50, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--background);
+
+  color: var(--text-primary);
+
+  border: 1px solid var(--border-color);
+}
+
+.btn-danger {
+  background: var(--danger-bg);
+
+  color: var(--danger);
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.badge-success {
+  background: var(--success-bg);
+
+  color: var(--success);
+}
+
+.badge-warning {
+  background: var(--warning-bg);
+
+  color: var(--warning);
+}
+
+.badge-danger {
+  background: var(--danger-bg);
+
+  color: var(--danger);
+}
+
+.badge-info {
+  background: var(--info-bg);
+
+  color: var(--info);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(43, 38, 32, 0.55);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2000;
+
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  width: min(600px, 90%);
+
+  background: var(--card-bg);
+
+  border-radius: 20px;
+
+  padding: 24px;
+
+  box-shadow: var(--shadow-lg);
+
+  animation: modalEnter 0.25s ease;
+}
+
+.modal-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+
+  color: var(--text-secondary);
+
+  font-size: 20px;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
